@@ -1,0 +1,23 @@
+@page
+@model DotNetBlogApp.Pages.Blogs.CreateModel
+
+<h2>Create New Blog</h2>
+
+<form method="post" enctype="multipart/form-data">  <!-- Added enctype for file uploads -->
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input class="form-control" type="text" id="Title" name="Title" required />
+    </div>
+    <div class="form-group">
+        <label for="Content">Content</label>
+        <textarea class="form-control" id="Content" name="Content" required></textarea>
+    </div>
+
+    <!-- Add the Image Upload -->
+    <div class="form-group">
+        <label for="Image">Image</label>
+        <input class="form-control" type="file" id="Image" name="Image" accept="image/*" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Blog</button>
+</form>

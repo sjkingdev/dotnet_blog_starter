@@ -1,0 +1,107 @@
+﻿@page
+@model DotNetBlogApp.Pages.Blogs.DisplayBlogsModel
+@{
+    ViewData["Title"] = "All Blog Posts";
+}
+
+<style>
+    .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+</style>
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var blog in Model.Blogs)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                   
+               @if (!string.IsNullOrEmpty(blog.ImagePath))
+                    {
+                        <img src="~/@blog.ImagePath" class="card-img-top" alt="Blog Image">
+                    }
+                    else
+                    {
+                        <div class="card-img-top card-img-top-placeholder">
+                            <span>No Image</span>
+                        </div>
+                    }
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">@blog.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@blog.Subtitle</h6>
+                        <p class="card-text">@((blog.Content?.Length > 100 ? blog.Content.Substring(0, 100) + "..." : blog.Content))</p>
+                        <p class="card-text"><small class="text-muted">Created on @blog.CreatedAt.ToShortDateString()</small></p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+@* @page
+@model DotNetBlogApp.Pages.Blogs.DisplayBlogsModel
+@{
+    ViewData["Title"] = "All Blog Posts";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Title</th>
+            <th>Subtitle</th>
+            <th>Content</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var blog in Model.Blogs)
+        {
+            <tr>
+                <td>@blog.Title</td>
+                <td>@blog.Subtitle</td>
+                <td>@(blog.Content?.Length > 100 ? blog.Content.Substring(0, 100) + "..." : blog.Content)</td>
+                <td>@blog.CreatedAt.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table> *@

@@ -1,0 +1,22 @@
+@page
+@model DotNetBlogApp.Pages.Blogs.IndexModel
+
+<h2>Blogs</h2>
+
+<!-- Always show the "Create New Blog" button -->
+<a href="/Blogs/Create" class="btn btn-primary">Create New Blog</a>
+
+<ul>
+    @foreach (var blog in Model.Blogs)
+    {
+        <li>
+            <h3>@blog.Title</h3>
+            <p>@blog.Content</p>
+            @if (!string.IsNullOrEmpty(blog.ImagePath))
+            {
+                <img src="~/@blog.ImagePath" alt="Blog Image" style="width: 200px; height: auto;" />
+            }
+            <a href="/Blogs/Edit?id=@blog.Id" class="btn btn-warning">Edit</a>
+        </li>
+    }
+</ul>

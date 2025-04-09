@@ -1,0 +1,8 @@
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.csproj.AssemblyReference.cache
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.AssemblyInfoInputs.cache
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.AssemblyInfo.cs
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.csproj.CoreCompileInputs.cache
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.RazorAssemblyInfo.cache
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net8.0\DotNetBlogApp.RazorAssemblyInfo.cs

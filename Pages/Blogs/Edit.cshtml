@@ -1,0 +1,29 @@
+@page
+@model DotNetBlogApp.Pages.Blogs.EditModel
+
+<h2>Edit Blog</h2>
+
+<form method="post" enctype="multipart/form-data">  <!-- Added enctype for file uploads -->
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input class="form-control" type="text" id="Title" name="Title" value="@Model.Blog.Title" required />
+    </div>
+    <div class="form-group">
+        <label for="Content">Content</label>
+        <textarea class="form-control" id="Content" name="Content" required>@Model.Blog.Content</textarea>
+    </div>
+
+    <!-- Add the Image Upload -->
+    <div class="form-group">
+        <label for="Image">Image</label>
+        <input class="form-control" type="file" id="Image" name="Image" accept="image/*" />
+        @if (Model.Blog.ImagePath != null)
+        {
+            <div>
+                <img src="~/images/@Model.Blog.ImagePath" alt="Blog Image" style="width: 200px; height: auto;" />
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
