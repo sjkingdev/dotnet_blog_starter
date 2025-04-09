@@ -231,3 +231,4 @@ C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net9.0\DotNetBlogApp.
 C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net9.0\ref\DotNetBlogApp.dll
 C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\bin\Debug\net9.0\MySqlConnector.dll
 C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\seany\www\dotnet\blog_app\DotNetBlogApp\obj\Debug\net9.0\DotNetBlogApp.sourcelink.json
